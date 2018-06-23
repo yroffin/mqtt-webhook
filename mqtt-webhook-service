@@ -20,8 +20,9 @@ NAME="mqtt-webhook-service"
 CWD=/home/mqtt-webhook
 USER=mqtt-webhook
 GROUP=mqtt-webhook
-MQTT_GATEWAY=`which mqtt-webhook`
+MQTT_GATEWAY=`which node`
 MQTT_GATEWAY_ARGS="
+mqtt-webhook.js
  --lport     `grep mqtt-webhook.lport /etc/mqtt-webhook/mqtt-webhook.conf     | cut -f2 -d=`
  --lhost     `grep mqtt-webhook.lhost /etc/mqtt-webhook/mqtt-webhook.conf     | cut -f2 -d=`
  --lusername `grep mqtt-webhook.lusername /etc/mqtt-webhook/mqtt-webhook.conf | cut -f2 -d=`
