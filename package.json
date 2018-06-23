@@ -1,0 +1,13 @@
+{
+  "name": "mgtt-webhook",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "node mqtt-webhook.js"
+  },
+  "dependencies": {
+    "mqtt": "~2.18.0",
+    "args": "~4.0.0",
+    "request": "2.87.0"
+  }
+}
